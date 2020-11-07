@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="Es" dir="ltr">
+  <head>
+    <meta  charset="utf-8">
+    <title>Edad en otro Planeta</title>
+  </head>
+  <body>
+    <h1>Tu peso en otro planeta</h1>
+    <p>En la tierra pesas distinto que en marte y jupiter</p>
+    <script type="text/javascript">
+    //declaracion de variables posibles
+      var Usuario = prompt ("Cual es tu peso: ");
+      var peso = parseFloat(Usuario);
+      var g_tierra = 9.8;
+      var g_marte = 3.7;
+      var g_jupiter = 24.8;
+      var peso_final;
+        peso_final = peso * g_marte / g_tierra; //operacion para mostrar el resultado
+        peso_final = parseInt(peso_final); // lo convierte o redondea de decimal a entero
+      document.write("Tu peso en marte es: <strong>" + peso_final + " Kilos </strong>"); // Resultado final y tambien
+                                                                                         //se puede añadir html5 dentro del javascript
+                                                                                         //siempre debe ir dentro de las comillas
+    </script>
+  </body>
+</html>
